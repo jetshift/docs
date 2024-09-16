@@ -19,3 +19,12 @@ Get your data moving swiftly and reliably with JetShift. 🚀
 ## Usage
 
 For detailed usage instructions, please refer to the [JetShift Documentation](https://jetshift.vercel.app).
+
+## Linked Repositories
+
+- [JetShift](https://github.com/jetshift/jetshift)
+- [JetShift Core](https://github.com/jetshift/core)
+
+## License
+
+The JetShift is open-sourced software licensed under the [MIT license](https://github.com/mdobydullah/jetshift/blob/master/LICENSE).

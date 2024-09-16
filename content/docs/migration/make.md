@@ -5,7 +5,7 @@ summary: ""
 date: 2024-09-13T16:13:18+02:00
 lastmod: 2024-09-13T16:13:18+02:00
 draft: false
-weight: 21
+weight: 22
 toc: true
 seo:
   title: "" # custom title (optional)
@@ -14,18 +14,21 @@ seo:
   noindex: false # false (default) or true
 ---
 
-Structure
+Each database engine (dialect) has its own schema, so you need to specify the engine when creating a migration.
+
+Example database engines: mysql, sqlite, mariadb, postgresql, clickhouse, redshift.
+
+JetShift supports all [SQLAlchemy's Dialects](https://docs.sqlalchemy.org/en/20/dialects/). For ClickHouse, the dialect name is `clickhouse-sqlalchemy`. You can simply use `clickhouse` instead of the full dialect name. Ensure you use the same name when running migrations or creating seeders.
+
+To create a new migration for a table, use the following command:
+
 ```bash
 make migration table-name -e database-engine
 ```
 
 Example
+
 ```bash
 make migration blogs # default engine is mysql
 make migration blogs -e mysql
-```
-
-
-Available database engines: mysql, clickhouse. You can easily add new a engine.
-
-All migrations are available in `database/migrations` directory.
+``

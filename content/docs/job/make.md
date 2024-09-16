@@ -5,7 +5,7 @@ summary: ""
 date: 2024-09-13T16:13:18+02:00
 lastmod: 2024-09-13T16:13:18+02:00
 draft: false
-weight: 41
+weight: 42
 toc: true
 seo:
   title: "" # custom title (optional)
@@ -27,6 +27,4 @@ make job time # default job type is simple
 make job time -jt simple
 ```
 
-Available job types: simple. You can easily add new a type.
-
-All jobs are available in `jobs` directory.
+You can find all available job types [here](https://github.com/jetshift/core/tree/main/jetshift_core/stubs/jobs).

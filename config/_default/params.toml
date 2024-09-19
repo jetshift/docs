@@ -55,8 +55,8 @@ mainSections = ["docs"]
   showMissingLanguages = true # whether or not to show untranslated languages in the language menu; true (default) or false
 
   # Versioning
-  docsVersioning = false # false (default) or true
-  docsVersion = "1.0"
+  docsVersioning = true # false (default) or true
+  docsVersion = "1.x"
 
   # UX
   headerBar = false # true (default) or false
@@ -74,7 +74,7 @@ mainSections = ["docs"]
   editPage = true # false (default) or true
   lastMod = false # false (default) or true
   repoHost = "GitHub" # GitHub (default), Gitea, GitLab, Bitbucket, or BitbucketServer
-  docsRepo = "https://github.com/mdobydullah/jetshift-docs"
+  docsRepo = "https://github.com/jetshift/docs"
   docsRepoBranch = "main" # main (default), master, or <branch name>
   docsRepoSubPath = "" # "" (none, default) or <sub path>
 

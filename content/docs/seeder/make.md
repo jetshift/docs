@@ -17,14 +17,12 @@ seo:
 Structure
 
 ```bash
-make seeder seeder-name -e database-engine
+jetshift make seeder seeder-name -e database-engine
 ```
 
 Examples
 
 ```bash
-make seeder blogs # default engine is mysql
-make seeder blogs -e mysql
+jetshift make seeder blogs # default engine is mysql
+jetshift make seeder blogs -e mysql
 ```
-
-Available database engines: mysql. You can easily add new a engine.

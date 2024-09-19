@@ -41,7 +41,7 @@ docker compose up -d
 Web servers
 
 ```bash
-Web: http://localhost
+Web: http://localhost:8080
 Luigid: http://localhost:8082
 ```
 
@@ -81,6 +81,6 @@ dev
 Web servers
 
 ```bash
-Web: http://localhost
+Web: http://localhost:8080
 Luigid: http://localhost:8082
 ```

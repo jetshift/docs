@@ -17,15 +17,15 @@ seo:
 Structure
 
 ```bash
-python -m jobs.{job}
+jetshift job {job}
 # or
-job {job}
+python -m jobs.{job}
 ```
 
 Examples
 
 ```bash
-python -m jobs.time
+jetshift job time
 # or
-job time
+python -m jobs.time
 ```

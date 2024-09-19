@@ -17,13 +17,13 @@ seo:
 Structure
 
 ```bash
-migrate database-engine # run all migrations
-migrate database-engine table-name # run specific migration
+jetshift migrate database-engine # run all migrations
+jetshift migrate database-engine table-name # run specific migration
 ```
 
 Examples
 
 ```bash
-migrate mysql
-migrate mysql users
+jetshift migrate mysql
+jetshift migrate mysql users
 ```

@@ -17,11 +17,11 @@ seo:
 Structure
 
 ```bash
-make quicker quicker-name
+jetshift make quicker quicker-name
 ```
 
 Example
 
 ```bash
-make quicker sales-report
+jetshift make quicker sales-report-data
 ```

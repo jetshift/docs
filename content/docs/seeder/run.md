@@ -17,15 +17,15 @@ seo:
 Structure
 
 ```bash
-seed database-engine # run all seeders
-seed database-engine table-name # run specific seeder
-seed database-engine table-name -n number # run specific seeder with n records
+jetshift seed database-engine # run all jetshift seeders
+jetshift seed database-engine table-name # run specific jetshift seeder
+jetshift seed database-engine table-name -n number # run specific jetshift seeder with n records
 ```
 
 Examples
 
 ```bash
-seed mysql
-seed mysql users
-seed mysql users -n 10
+jetshift seed mysql
+jetshift seed mysql users
+jetshift seed mysql users -n 10
 ```

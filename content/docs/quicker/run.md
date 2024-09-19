@@ -16,14 +16,14 @@ seo:
 
 Structure
 ```bash
-python -m quickers.{quicker}
+jetshift quick {quicker}
 # or
-quick {quicker}
+python -m quickers.{quicker}
 ```
 
 Example
 ```bash
-python -m quickers.sales-report
+jetshift quick sales-report-data
 # or
-quick sales-report
+python -m quickers.sales-report-data
 ```

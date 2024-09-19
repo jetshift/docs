@@ -17,14 +17,14 @@ seo:
 Structure
 
 ```bash
-make job job-name -jt job-type
+jetshift make job job-name -jt job-type
 ```
 
 Examples
 
 ```bash
-make job time # default job type is simple
-make job time -jt simple
+jetshift make job time # default job type is simple
+jetshift make job time -jt simple
 ```
 
 You can find all available job types [here](https://github.com/jetshift/core/tree/main/jetshift_core/stubs/jobs).

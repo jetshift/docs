@@ -28,6 +28,12 @@ Then, navigate to the project directory:
 cd jetshift
 ```
 
+Copy the environment file:
+
+```bash
+cp .env.example .env
+```
+
 You can run the project with docker and without docker.
 
 ### With Docker
@@ -75,7 +81,7 @@ pip install -e .
 Run dev servers
 
 ```bash
-dev
+jetshift dev
 ```
 
 Web servers

@@ -1,5 +1,5 @@
 # Hugo
-title = "JetShift Docs"
+title = "JetShift"
 description = "JetShift is a powerful and lightweight ETL framework that simplifies the process of building data pipelines."
 images = ["cover.png"]
 

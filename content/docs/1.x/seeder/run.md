@@ -17,15 +17,34 @@ seo:
 Structure
 
 ```bash
-jetshift seed database-engine # run all jetshift seeders
-jetshift seed database-engine table-name # run specific jetshift seeder
-jetshift seed database-engine table-name -n number # run specific jetshift seeder with n records
+jetshift seed table-name -e database-engine -n number-of-records
 ```
 
-Examples
+### Run all seeders
+
+```py {title="Examples"}
+jetshift seed # default engine is mysql
+jetshift seed -e mysql
+```
+
+### Run specific seeder
 
 ```bash
-jetshift seed mysql
-jetshift seed mysql users
-jetshift seed mysql users -n 10
+jetshift seed table-name -e database-engine
+```
+
+```py {title="Example"}
+jetshift seed users # default engine is mysql
+jetshift seed users -e mysql
+```
+
+### Run specific seeder with n records
+
+```bash
+jetshift seed table-name -e database-engine -n number-of-records
+```
+
+```py {title="Example"}
+jetshift seed users -n 10 # default engine is mysql
+jetshift seed users -e mysql -n 10
 ```

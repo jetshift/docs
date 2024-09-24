@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-<strong>JetShift Docs</strong>
+<strong>JetShift</strong>
 </p>
 
 > JetShift is a powerful and lightweight ETL framework that simplifies the process of building data pipelines.

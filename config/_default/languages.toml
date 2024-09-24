@@ -5,4 +5,4 @@
   [en.params]
     languageISO = "EN"
     languageTag = "en-US"
-    footer = '<a class="text-muted" href="https://github.com/jetshift/docs">JetShift Docs Repo</a>'
+    footer = '<a class="text-muted" href="https://github.com/jetshift/docs">JetShift Repo</a>'

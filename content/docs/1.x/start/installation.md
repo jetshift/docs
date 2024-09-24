@@ -19,7 +19,7 @@ Getting started is easy. Follow these steps to install and set up the project.
 First, clone the repository:
 
 ```bash
-git clone --depth 1 git@github.com:mdobydullah/jetshift.git
+git clone --depth 1 https://github.com/jetshift/jetshift.git
 ```
 
 Then, navigate to the project directory:
@@ -47,7 +47,7 @@ docker compose up -d
 Web servers
 
 ```bash
-Web: http://localhost:8080
+JetShift: http://localhost:8080
 Luigid: http://localhost:8082
 ```
 
@@ -62,13 +62,13 @@ python -m venv venv
 Activate the virtual environment
 
 ```bash
-# linux
+# Linux
 source venv/bin/activate
 
-# windows
+# Windows
 venv\Scripts\activate
 
-# windows (gitbash)
+# Git bash
 source venv/Scripts/activate
 ```
 
@@ -84,9 +84,7 @@ Run dev servers
 jetshift dev
 ```
 
-Web servers
-
 ```bash
-Web: http://localhost:8080
+JetShift: http://localhost:8080
 Luigid: http://localhost:8082
 ```

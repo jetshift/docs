@@ -20,27 +20,25 @@ All quickers are available in `quickers` directory.
 
 An example quicker:
 
-
 ```python {title="quickers/test.py"}
 from jetshift_core.helpers.quicker import migrations, seeders, jobs
-
+from jetshift_core.helpers.common import jprint
 
 def main():
     migrations_list = ["mysql", "clickhouse"]
     migrations(migrations_list)
-    print("\nMigrations completed ✓✓✓\n")
+    jprint("✓ Migrations completed", 'success', True)
 
-    seeder_list = ["users -n 10"]
+    seeder_list = ["users -n 5"]
     seeders(seeder_list)
-    print("\nSeeders completed ✓✓✓\n")
+    jprint("✓ Seeders completed", 'success', True)
 
     job_list = ["users"]
     jobs(job_list)
-    print("\nJobs completed ✓✓✓\n")
-
+    jprint("✓ Jobs completed", 'success', True)
 
 if __name__ == "__main__":
     main()
-
 ```
 
+The quicker will drop all the tables, run migrations, seeders, and jobs in one go.

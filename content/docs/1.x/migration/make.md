@@ -26,7 +26,7 @@ To create a new migration for a table, use the following command:
 jetshift make migration table-name -e database-engine
 ```
 
-Example
+Examples
 
 ```bash
 jetshift make migration blogs # default engine is mysql

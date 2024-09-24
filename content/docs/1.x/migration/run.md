@@ -14,16 +14,42 @@ seo:
   noindex: false # false (default) or true
 ---
 
-Structure
+### Run all migrations
 
 ```bash
-jetshift migrate database-engine # run all migrations
-jetshift migrate database-engine table-name # run specific migration
+jetshift migrate -e database-engine
 ```
 
-Examples
+```py {title="Examples"}
+jetshift migrate # default engine is mysql
+jetshift migrate -e clickhouse
+```
+
+### Run specific migration
 
 ```bash
-jetshift migrate mysql
-jetshift migrate mysql users
+jetshift migrate table-name -e database-engine
+```
+
+```py {title="Examples"}
+jetshift migrate users # default engine is mysql
+jetshift migrate users -e clickhouse
+```
+
+### Drop table and migrate
+
+The `--fresh` or `-f` option will drop the table from the database and then execute the migrate command:
+
+Drop all tables:
+
+```bash
+jetshift migrate --fresh # default engine is mysql
+jetshift migrate -e clickhouse -f
+```
+
+Drop specific table:
+
+```py {title="Examples"}
+jetshift migrate users --fresh # default engine is mysql
+jetshift migrate users -e clickhouse -f
 ```

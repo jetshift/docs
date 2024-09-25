@@ -1,11 +1,11 @@
 ---
-title: "Migration"
+title: "ClickHouse"
 description: ""
 summary: ""
-date: 2024-09-13T16:12:37+02:00
-lastmod: 2024-09-13T16:12:37+02:00
+date: 2024-09-24T16:12:37+02:00
+lastmod: 2024-09-24T16:12:37+02:00
 draft: false
-weight: 50
+weight: 180
 toc: true
 sidebar:
   collapsed: true

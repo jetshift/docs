@@ -19,7 +19,7 @@ Structure
 ```bash
 jetshift job {job}
 # or
-python -m jobs.{job}
+python -m app.jobs.{job}
 ```
 
 Examples
@@ -27,5 +27,5 @@ Examples
 ```bash
 jetshift job time
 # or
-python -m jobs.time
+python -m app.jobs.time
 ```

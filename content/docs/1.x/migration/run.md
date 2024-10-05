@@ -38,16 +38,25 @@ jetshift migrate users -e clickhouse
 
 ### Drop table and migrate
 
-The `--fresh` or `-f` option will drop the table from the database and then execute the migrate command:
+The `-d` option will drop all tables from the database:
 
 Drop all tables:
+
+```bash
+jetshift migrate -d
+jetshift migrate -d -e clickhouse
+```
+
+The `--fresh` or `-f` option will drop the table from the database and then execute the migrate command:
+
+Drop and migrate all tables:
 
 ```bash
 jetshift migrate --fresh # default engine is mysql
 jetshift migrate -e clickhouse -f
 ```
 
-Drop specific table:
+Drop and migrate specific table:
 
 ```py {title="Examples"}
 jetshift migrate users --fresh # default engine is mysql

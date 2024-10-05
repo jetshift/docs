@@ -14,11 +14,29 @@ seo:
   noindex: false # false (default) or true
 ---
 
-Structure
+### Structure
+
+To see the available options, run the following command:
 
 ```bash
-jetshift seed table-name -e database-engine -n number-of-records
+jetshift seed --help
 ```
+
+Command with all options:
+
+```bash
+jetshift seed migration-name -e mysql -n 10 -nd 5 -sd -sdd
+```
+
+Options:
+
+- `-e` - Database engine. Default is mysql.
+- `-n` - Number of records to seed
+- `-nd` - Number of records to seed for dependent tables
+- `-sd` - Skip dependent seeders
+- `-sdd` - Skip dependent seeders if data exists
+
+Don't use `-sd` and `-sdd` together.
 
 ### Run all seeders
 

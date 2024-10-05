@@ -17,13 +17,9 @@ seo:
 Structure
 ```bash
 jetshift quick {quicker}
-# or
-python -m quickers.{quicker}
 ```
 
 Example
 ```bash
-jetshift quick sales-report-data
-# or
-python -m quickers.sales-report-data
+jetshift quick sales-report
 ```

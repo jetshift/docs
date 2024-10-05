@@ -16,29 +16,30 @@ seo:
 
 Quicker is a set of commands that help you with migrations, seeders, and jobs. This is very helpful when you are making a report or testing your application. You can run all the commands in one go.
 
-All quickers are available in `quickers` directory.
+All quickers are available in `app/quickers` directory.
 
 An example quicker:
 
-```python {title="quickers/test.py"}
-from jetshift_core.helpers.quicker import migrations, seeders, jobs
-from jetshift_core.helpers.common import jprint
+```yaml {title="app/quickers/test.yaml"}
+migrations:
+  fresh: true
+  engines:
+    - "mysql"
+    - "clickhouse"
 
-def main():
-    migrations_list = ["mysql", "clickhouse"]
-    migrations(migrations_list)
-    jprint("✓ Migrations completed", 'success', True)
+seeders:
+  engines:
+    - "mysql"
+    - "clickhouse"
+  names:
+    - "users -n 50"
+    #  - "all"
 
-    seeder_list = ["users -n 5"]
-    seeders(seeder_list)
-    jprint("✓ Seeders completed", 'success', True)
+jobs:
+  - "users"
+  #  - "all"
+  #  - "seeders"
 
-    job_list = ["users"]
-    jobs(job_list)
-    jprint("✓ Jobs completed", 'success', True)
-
-if __name__ == "__main__":
-    main()
 ```
 
 The quicker will drop all the tables, run migrations, seeders, and jobs in one go.

@@ -23,12 +23,11 @@ JetShift supports all [SQLAlchemy's Dialects](https://docs.sqlalchemy.org/en/20/
 To create a new migration for a table, use the following command:
 
 ```bash
-jetshift make migration table-name -e database-engine
+jetshift make migration table-name
 ```
 
 Examples
 
 ```bash
-jetshift make migration blogs # default engine is mysql
-jetshift make migration blogs -e mysql
+jetshift make migration blogs
 ```

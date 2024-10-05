@@ -20,4 +20,4 @@ For scheduled jobs, you can use our built-in crontab scheduler. You can also use
 
 We use [Spotify's Luigi](https://github.com/spotify/luigi) to manage the job. Luigi is a Python module that helps you build complex pipelines of batch jobs. It handles dependency resolution, workflow management, visualization, and more.
 
-All jobs are available in `jobs` directory.
+All jobs are available in `app/jobs` directory.

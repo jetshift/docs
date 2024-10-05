@@ -23,5 +23,5 @@ jetshift make quicker quicker-name
 Example
 
 ```bash
-jetshift make quicker sales-report-data
+jetshift make quicker sales-report
 ```

@@ -16,7 +16,30 @@ seo:
 
 Transfer millions of rows from MySQL to ClickHouse.
 
-```python {title="jobs/users.py"}
+### Example Job
+
+YAML example:
+
+```yaml {title="app/jobs/users.yaml"}
+table:
+  name: users
+  primary_id: id
+  live_schema: false
+extract:
+  offset: 0
+  limit: 500
+  #  chunk_size: 500
+load:
+  truncate_table: false
+  chunk_size: 250
+  sleep_interval: 1
+task:
+  module: jetshift_core.tasks.mysql_clickhouse_insert
+```
+
+Python example:
+
+```python {title="app/jobs/users.py"}
 from config.luigi import luigi, local_scheduler
 from jetshift_core.tasks.mysql_clickhouse_insert import BaseTask
 
@@ -33,8 +56,8 @@ def main():
         # extract_chunk_size=500,
         # load
         truncate_table=False,
-        load_chunk_size=500,
-        sleep_interval=5
+        load_chunk_size=250,
+        sleep_interval=1
     )], local_scheduler=local_scheduler)
 
 if __name__ == '__main__':
@@ -106,7 +129,6 @@ extract_chunk_size = 1000
 # will auto calculate total rows and loops.
 # then extract data in chunks with sleep interval.
 
-```python
 total_rows = 100000
 total_loops = total_rows / extract_chunk_size
 

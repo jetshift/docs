@@ -19,4 +19,4 @@ Database migration is the process of managing and applying changes to the databa
 We use [SQLAlchemy](https://www.sqlalchemy.org/) library. SQLAlchemy provides database-agnostic support for creating and manipulating tables across various [supported database systems](https://docs.sqlalchemy.org/en/20/dialects/). Typically, migrations will use this library to create and modify database tables and columns.
 
 
-All migrations are available in `database/migrations` directory.
+All migrations are available in `app/migrations` directory.

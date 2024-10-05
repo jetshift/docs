@@ -15,5 +15,3 @@ seo:
 ---
 
 JetShift includes the ability to seed your database with data using seed classes.
-
-All seeders are available in `database/seeders` directory.

@@ -26,7 +26,7 @@ You can define custom faker data in the migration file. You need to add the `see
 
 Python faker library is used to generate fake data. You can find the list of [faker functions here](https://faker.readthedocs.io/en/master/index.html).
 
-```yaml {title="app/migrations/users.yaml", hl_lines=[6,11]}
+```yaml {title="app/migrations/users.yml", hl_lines=[6,11]}
 table_name: users
 columns:
   - name: name
@@ -44,7 +44,7 @@ columns:
 
 JetShift also supports [Python's random module functions](https://docs.python.org/3/library/random.html). You can use the random module functions as a seeder value.
 
-```yaml {title="app/migrations/users.yaml", hl_lines=[6,11]}
+```yaml {title="app/migrations/users.yml", hl_lines=[6,11]}
 table_name: users
 columns:
   - name: age
@@ -75,7 +75,7 @@ id,name,email
 
 Now, you need to add the `data` key in the migration file and set it to `true`.
 
-```yaml {title="app/migrations/users.yaml", hl_lines=2}
+```yaml {title="app/migrations/users.yml", hl_lines=2}
 table_name: users
 data: true
 columns:

@@ -20,7 +20,7 @@ All quickers are available in `app/quickers` directory.
 
 An example quicker:
 
-```yaml {title="app/quickers/test.yaml"}
+```yaml {title="app/quickers/test.yml"}
 migrations:
   fresh: true
   engines:

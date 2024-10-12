@@ -25,7 +25,7 @@ jetshift seed --help
 Command with all options:
 
 ```bash
-jetshift seed migration-name -e mysql -n 10 -nd 5 -sd -sdd
+jetshift seed migration-name -e mysql -n 10 -nd 5 -sd -sde
 ```
 
 Options:
@@ -34,9 +34,9 @@ Options:
 - `-n` - Number of records to seed
 - `-nd` - Number of records to seed for dependent tables
 - `-sd` - Skip dependent seeders
-- `-sdd` - Skip dependent seeders if data exists
+- `-sde` - Skip dependent seeders if data exists
 
-Don't use `-sd` and `-sdd` together.
+Don't use `-sd` and `-sde` together.
 
 ### Run all seeders
 

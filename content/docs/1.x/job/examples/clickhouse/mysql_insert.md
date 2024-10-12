@@ -20,7 +20,7 @@ Transfer millions of rows from MySQL to ClickHouse.
 
 YAML example:
 
-```yaml {title="app/jobs/users.yaml"}
+```yaml {title="app/jobs/users.yml"}
 table:
   name: users
   primary_id: id

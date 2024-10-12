@@ -259,7 +259,6 @@
     "ids": [
       "TableOfContents",
       "buttonColorMode",
-      "custom-faker-data",
       "doks-docs-nav",
       "doks-versions",
       "drop-table-and-migrate",
@@ -269,7 +268,6 @@
       "extract_offset",
       "faker-and-random-functions",
       "faker-functions",
-      "faker-library",
       "live_schema",
       "load-fake-data-from-csv",
       "load_chunk_size",
@@ -281,7 +279,6 @@
       "primary_id",
       "query",
       "random-functions",
-      "random-module",
       "run-all-migrations",
       "run-all-seeders",
       "run-specific-migration",
